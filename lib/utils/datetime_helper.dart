@@ -16,7 +16,6 @@ class DatetimeHelper{
     DateTime dt1 = DateTime.parse("$formatedStartDate");
     DateTime dt2 = DateTime.parse("$formatedFinishDate");
     Duration diff = dt2.difference(dt1);
-    print(diff.inDays.runtimeType);
     return diff.inDays;
   }
 }

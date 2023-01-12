@@ -58,7 +58,6 @@ class LoginViewModel {
           }
 
         } else {
-          print("Wrong password");
           loggedIn="Wrong password";
         }
       }
