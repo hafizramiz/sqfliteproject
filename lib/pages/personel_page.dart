@@ -50,7 +50,6 @@ class PersonelPage extends StatelessWidget {
                             firstDate: DateTime.now(),
                             lastDate: DateTime(2024),
                           ) as DateTime;
-                          print("secilen Baslangic tarihi: ${startDate}");
                           Provider.of<PersonelViewModel>(context, listen: false)
                               .setStartDateController(startDate);
                         },
@@ -88,7 +87,6 @@ class PersonelPage extends StatelessWidget {
                             firstDate: DateTime.now(),
                             lastDate: DateTime(2024),
                           ) as DateTime;
-                          print("secilen bitis tarihi: ${finishDate}");
                           Provider.of<PersonelViewModel>(context, listen: false)
                               .setFinishDateController(finishDate);
                         },

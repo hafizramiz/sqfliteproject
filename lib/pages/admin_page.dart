@@ -27,7 +27,6 @@ class _AdminPageRequestsState extends State<AdminPageRequests> {
   @override
   Widget build(BuildContext context) {
     myFuture = databaseHelper.getPendingPermissionRequestsList();
-    print("Build calisti");
     return FutureBuilder<List<Permission>>(
       future: myFuture,
       builder: (context, AsyncSnapshot<List<Permission>> snapshot) {

@@ -26,7 +26,6 @@ class DatabaseHelper {
       onConfigure: _onConfigure,
       onCreate: _createDb,
     );
-    print("Database Olusturuldu. Yolu da soyledir: ${dbDirectory}");
   }
 
   static Future _onConfigure(Database db) async {
@@ -59,14 +58,12 @@ class DatabaseHelper {
   Future<void> insertUser(User user) async {
     var count = Sqflite.firstIntValue(await database.rawQuery(
         "SELECT COUNT(*) FROM user WHERE user_name = ?", [user.user_name]));
-    print("user name sayisi: $count");
     if (count == 0) {
       await database.insert("user", user.toJson(),
           conflictAlgorithm: ConflictAlgorithm.replace);
     } else {
       throw Exception("There is a user with the same name");
     }
-    print("insert calisti");
   }
 
   Future<List<Map<String, dynamic>>> getUser(User user) async {
@@ -78,11 +75,9 @@ class DatabaseHelper {
   Future<void> insertPermisson(Permission permission) async {
     var count = Sqflite.firstIntValue(await database.rawQuery(
         "SELECT COUNT(*) FROM permissons WHERE id = ?", [permission.id]));
-    print("Permisson sayisi: $count");
     if (count == 0) {
       await database.insert("permissons", permission.toJson(),
           conflictAlgorithm: ConflictAlgorithm.replace);
-      print("permission eklendi ");
     } else {
       throw Exception("We found a permission with same id");
     }
@@ -104,8 +99,6 @@ class DatabaseHelper {
 
   Future<void> getUserList() async {
     final userList = await database.query("user");
-    print("User Listesi: ${userList}");
-    print("User Listesi Type: ${userList.runtimeType}");
   }
 
   Future<List<Permission>> getPendingPermissionRequestsList() async {
@@ -126,7 +119,6 @@ class DatabaseHelper {
   Future<void> update(Permission permission) async {
     await database.update("permissons", permission.toJson(),
         where: "id = ?", whereArgs: [permission.id]);
-    print("update basarili");
   }
 
   Future<List<Map<String,dynamic>>> getPendingPermissionRequestsInnerJoin(int accept_status) async {

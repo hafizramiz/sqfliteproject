@@ -12,7 +12,6 @@ String dropdownValue="admin";
 
 setterDropDownValue(String? value){
   dropdownValue=value!;
-  print("secilen deger: ${dropdownValue}");
   notifyListeners();
 }
 

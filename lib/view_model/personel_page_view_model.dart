@@ -44,7 +44,6 @@ class PersonelViewModel {
       await databaseHelper.insertPermisson(permission);
       return "We are creating new permission";
     } catch (error) {
-      print(error);
       return "There is a permission with same id";
     }
   }

@@ -45,7 +45,6 @@ class LoginViewModel {
                 MaterialPageRoute(
                   builder: (context) => PersonelPage(user: recordedUser,),
                 ));
-            print("Giris Basarili");
             loggedIn="Giris yapiliyor";
           }else if(recordedUser.user_type=="admin"){
             Navigator.push(
@@ -53,7 +52,6 @@ class LoginViewModel {
                 MaterialPageRoute(
                   builder: (context) => AdminPageRequests(user: recordedUser),
                 ));
-            print("Giris Basarili");
             loggedIn="Giris yapiliyor";
           }else{
             print("Beklenmeyen hata olustu");
@@ -65,7 +63,6 @@ class LoginViewModel {
         }
       }
     }catch(error){
-      print(error);
       loggedIn="There is no user with the same name";
     }
     return loggedIn;
