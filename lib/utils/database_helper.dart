@@ -11,7 +11,6 @@ class DatabaseHelper {
   factory DatabaseHelper() {
     return _databaseHelper;
   }
-
   DatabaseHelper._privateConstructor();
 
   static DatabaseHelper get databaseHelper => _databaseHelper;
@@ -124,7 +123,6 @@ class DatabaseHelper {
   Future<List<Map<String,dynamic>>> getPendingPermissionRequestsInnerJoin(int accept_status) async {
   List<Map<String,dynamic>> requestListWithUserName = await database.rawQuery(
       "SELECT * FROM permissons inner join user on user.id=permissons.user_id WHERE accept_status=? ",[accept_status]);
-      print(requestListWithUserName);
       return requestListWithUserName;
     }
 }
