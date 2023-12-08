@@ -9,6 +9,7 @@ This Flutter app is designed for tracking the employees!
 ## ✨ Features
 
 - **Easy Image Sharing:** Share your favorite images with friends and colleagues effortlessly.
+- 
 Local Authentication: Ensures secure access to the application.
 
 ## Technologies Used
