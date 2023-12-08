@@ -8,9 +8,13 @@ This Flutter app is designed for tracking the employees!
 
 ## ✨ Features
 
-- **Easy Image Sharing:** Share your favorite images with friends and colleagues effortlessly.
-- 
-Local Authentication: Ensures secure access to the application.
+- **Local Authentication:** Ensures secure access to the application.
+- **User Registration:** Employees can register by providing necessary information.
+- **Permission Requests:** Registered employees can submit permission requests.
+- **Admin Role:** An admin can be created to manage permission requests.
+- **Request Management:** Admin can view, accept, or reject permission requests.
+- **Activity Log:** Employees can view changes made by the admin.
+
 
 ## Technologies Used
 
