@@ -4,7 +4,7 @@ Hi there! 👋 I'm Hafiz Ramiz, and welcome to the Flutter Personel Tracking rep
 
 ## About This App
 
-This Flutter app is designed for tracking the employees!
+This app uses SQLite to store information about new user and for Local Authentication. Employee can make permission request after employee type registration. Then admin can create admin type account and list all requests from employee to accept or reject. Changes made by the admin can be viewed by the employee.
 
 ## ✨ Features
 
@@ -32,14 +32,12 @@ This Flutter app is designed for tracking the employees!
 
 To run this app locally, follow these steps:
 
-1. Clone this repository: `https://github.com/hafizramiz/cumamesajlari.git`
+1. Clone this repository: `https://github.com/hafizramiz/sqfliteproject.git`
 2. Navigate to the project folder:  `cd your-repo`
 3. Run the app: `flutter run`
 
-## 📸 Screenshots
-<img src="https://github.com/hafizramiz/cumamesajlari/assets/102408138/9acbbd93-5a24-4640-b09b-d2505cbf2f44" width="300" height="600" />
-<img src="https://github.com/hafizramiz/cumamesajlari/assets/102408138/93de59a5-6f6c-4d10-8ffc-a9b789f7ab26" width="300" height="600" />
-<img src="https://github.com/hafizramiz/cumamesajlari/assets/102408138/1482f059-ed8c-4f76-bb1a-934fabee9728" width="300" height="600" />
+## 📸 Videos
+https://github.com/hafizramiz/sqfliteproject/assets/102408138/b686cc05-7285-4473-bf25-32dce1c65135
 
 ## 🤓 Author
 
@@ -55,10 +53,3 @@ Happy coding! 🚀
 
 
 
-
-
-
-
-This app uses SQLite to store information about new user and for Local Authentication. Employee can make permission request after employee type registration. Then admin can create admin type account and list all requests from employee to accept or reject. Changes made by the admin can be viewed by the employee.
-
-https://github.com/hafizramiz/sqfliteproject/assets/102408138/b686cc05-7285-4473-bf25-32dce1c65135
